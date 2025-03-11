@@ -125,5 +125,17 @@ public class Student {
 }
 
 
+Identifiers
+--------------
+
+
+Identifiers are the named words in a peogramming language 
+
+
+Keywords
+----------
+
+Keywords are the reserved words having predefined meaning in the language
+
 
 
