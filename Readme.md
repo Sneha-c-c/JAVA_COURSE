@@ -2,7 +2,16 @@ JAVA
 -------
 
 1.What is java
+---------------------
+Java is object oriented programming language developed by sun microsyatems .Which offers features like multithreading , strong typing ,java rich libraries and automatic garbage collection .
+
 2.Basic structure of a program
+--------------------------------
+public class JavaFirst{  // define class name - Pascal case 
+    public static void main(String[] args){//define main method which is the starting point of  java execution
+        
+    }
+}
 
 VARIABLE IN JAVA
 -----------------
