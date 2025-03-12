@@ -134,6 +134,7 @@ Identifiers are the named words in a peogramming language
 
 Keywords
 ----------
+ Keywords are the reserved words in Java that have a predefined meaning and cannot be used as variable names, class names, method names, or object names.
 
 Keywords are the reserved words having predefined meaning in the language
 
