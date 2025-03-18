@@ -1,142 +1,127 @@
-JAVA
--------
+# **Java Learning Roadmap**
 
-1.What is java
----------------------
-Java is object oriented programming language developed by sun microsyatems .Which offers features like multithreading , strong typing ,java rich libraries and automatic garbage collection .
+## **1️⃣ Variables in Java**
+- Variables are containers for storing data values.
+- Types of variables:
+  - **Local Variable** (Declared inside a method, accessible only within that method)
+  - **Instance Variable** (Defined in a class but outside any method, belongs to an instance)
+  - **Static Variable** (Defined using `static`, shared across all instances of a class)
 
-2.Basic structure of a program
---------------------------------
-public class JavaFirst{  // define class name - Pascal case 
-    public static void main(String[] args){//define main method which is the starting point of  java execution
-        
-    }
-}
+## **2️⃣ Data Types in Java**
+- **Primitive Data Types** (int, char, double, boolean, etc.)
+- **Non-Primitive Data Types** (Strings, Arrays, Classes, Interfaces)
 
-VARIABLE IN JAVA
------------------
+## **3️⃣ Operators in Java**
+- **Arithmetic Operators** (+, -, *, /, %)
+- **Relational Operators** (==, !=, >, <, >=, <=)
+- **Logical Operators** (&&, ||, !)
+- **Bitwise Operators** (&, |, ^, ~, <<, >>, >>>)
 
-A variable in Java is like a container (box) that holds data (value).
+## **4️⃣ Bitwise Operators (Shift Operations)**
+- **Left Shift (`<<`)**: Multiplies by 2^n
+- **Right Shift (`>>`)**: Divides by 2^n (Maintains sign bit for negative numbers)
+- **Unsigned Right Shift (`>>>`)**: Fills leading bits with 0 (Only for positive numbers)
 
-Types of Variables in Java
------------------------------
-There are 3 types of variables in Java:
+## **5️⃣ Literals in Java**
+- Numeric (int, float, double)
+- Character (`'A'`)
+- String (`"Hello"`)
+- Boolean (`true`, `false`)
 
-Local Variable(method variable)
-Instance Variable (Non-Static Variable)
-Static Variable (Class Variable)
+## **6️⃣ Conditional Statements in Java**
+- **if, if-else, nested if, switch-case**
+- Used for decision-making
 
+## **7️⃣ Loops in Java**
+- **For Loop** (Used when number of iterations is known)
+- **While Loop** (Executes until condition is false)
+- **Do-While Loop** (Executes at least once before checking condition)
 
-1 Local Variable (Method Level Variable)
-------------------------------------------
+## **8️⃣ Break and Continue in Java**
+- **Break**: Stops loop execution immediately
+- **Continue**: Skips current iteration and moves to next
 
-A variable declared inside a method, constructor, or block is called a local variable.
-It is created when the method is called and destroyed when the method ends.
-It can only be accessed within that method.
-✅ Example: Local Variable
+## **9️⃣ Arrays in Java**
+- **Single-Dimensional Arrays** (Stores elements in a linear form)
+- **Multi-Dimensional Arrays** (Stores elements in tabular form)
+- **Array Methods**: `length`, `copyOf()`, `sort()`, etc.
 
-public class Student {
-    public void displayInfo() {
-        String name = "Sneha";  // Local Variable
-        int age = 23;           // Local Variable
-        
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-    }
+## **🔟 Keywords in Java**
+- **Reserved words** used in Java (static, final, abstract, etc.)
 
-    public static void main(String[] args) {
-        Student obj = new Student();
-        obj.displayInfo();
-    }
-}
-💡 Output:
-Name: Sneha
-Age: 23
+## **1️⃣1️⃣ Methods in Java**
+- **Method Declaration**
+- **Method Calling**
+- **Method Overloading & Overriding**
 
-2  Instance Variable (Non-Static Variable)
--------------------------------------------
+## **1️⃣2️⃣ Variable Arguments (Varargs) in Java**
+- Allows passing multiple arguments of the same type to a method
+- Syntax: `void methodName(int... numbers) {}`
 
-A variable declared inside a class but outside a method is called an Instance Variable.
-It belongs to the object of the class.
-Each object has its own copy of the instance variable.
-It is created when the object is created and destroyed when the object is destroyed.
+## **1️⃣3️⃣ Object-Oriented Programming (OOP) in Java**
+- **Encapsulation** (Data hiding using private variables)
+- **Inheritance** (One class acquiring properties of another)
+- **Polymorphism** (Method overloading and overriding)
+- **Abstraction** (Hiding implementation details, showing only functionality)
 
+## **1️⃣4️⃣ Constructors in Java**
+- **Default Constructor** (No parameters)
+- **Parameterized Constructor** (Takes parameters)
+- **Copy Constructor** (Creates a copy of another object)
 
-public class Student {
-    String name = "Sneha";   // Instance Variable
-    int age = 23;            // Instance Variable
+## **1️⃣5️⃣ This Keyword in Java**
+- Refers to current object instance
 
-    public void displayInfo() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-    }
+## **1️⃣6️⃣ Static Keyword in Java**
+- **Static variables**: Shared across all instances
+- **Static methods**: Can be called without an object
+- **Static blocks**: Executed before the main method
 
-    public static void main(String[] args) {
-        Student obj1 = new Student();  // Creating first object
-        obj1.displayInfo();
+## **1️⃣7️⃣ Access Modifiers in Java**
+- **Private** (Accessible within the same class)
+- **Default** (Accessible within the same package)
+- **Protected** (Accessible in subclasses)
+- **Public** (Accessible everywhere)
 
-        Student obj2 = new Student();  // Creating second object
-        obj2.name = "Rahul";   // Changing name for second object
-        obj2.displayInfo();
-    }
-}
+## **1️⃣8️⃣ Aggregation and Composition in Java**
+- **Aggregation**: "Has-a" relationship where objects are linked but can exist independently.
+- **Composition**: Strong "Has-a" relationship where dependent objects cannot exist without the main object.
 
+## **1️⃣9️⃣ Super Keyword in Java**
+- Refers to parent class variables, methods, and constructors
 
-3 Static Variable (Class Variable)
------------------------------------
+## **2️⃣0️⃣ StringBuilder and StringBuffer in Java**
+- **StringBuilder**: Faster, non-synchronized (Not thread-safe)
+- **StringBuffer**: Synchronized (Thread-safe but slower)
 
-A static variable is declared using the static keyword.
-It belongs to the class, not to the object.
-All objects share the same copy of the static variable.
-If you change the value, it reflects in all objects.
-It is created only once when the class is loaded into memory.
+## **2️⃣1️⃣ compareTo() and compareToIgnoreCase()**
+- **compareTo()**: Compares two strings lexicographically (case-sensitive)
+- **compareToIgnoreCase()**: Compares two strings ignoring case
 
+## **2️⃣2️⃣ Abstract Method vs Concrete Method**
+- **Abstract Method**: Declared but not implemented in an abstract class
+- **Concrete Method**: Fully implemented method
 
+## **2️⃣3️⃣ Abstract Classes in Java**
+- Cannot be instantiated
+- Can have both abstract and concrete methods
 
-public class Student {
-    static String collegeName = "ABC College";  // Static Variable
-    String name;
-    int age;
+## **2️⃣4️⃣ Interfaces in Java**
+- Defines abstract methods that must be implemented in subclasses
 
-    public Student(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+## **2️⃣5️⃣ Nested Classes in Java**
+- **Static Nested Class** (Accessed without object of outer class)
+- **Non-Static Nested Class (Inner Class)**
+- **Local Inner Class** (Inside a method)
+- **Anonymous Inner Class** (Without a class name)
 
-    public void displayInfo() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("College: " + collegeName);
-    }
-
-    public static void main(String[] args) {
-        Student obj1 = new Student("Sneha", 23);
-        obj1.displayInfo();
-
-        Student obj2 = new Student("Rahul", 25);
-        obj2.displayInfo();
-
-        // Changing static variable
-        Student.collegeName = "XYZ College";
-
-        obj1.displayInfo();
-        obj2.displayInfo();
-    }
-}
-
-
-Identifiers
---------------
-
-
-Identifiers are the named words in a peogramming language 
-
-
-Keywords
-----------
- Keywords are the reserved words in Java that have a predefined meaning and cannot be used as variable names, class names, method names, or object names.
-
-Keywords are the reserved words having predefined meaning in the language
-
-
+## **2️⃣6️⃣ Exceptions in Java**
+- **Checked Exceptions**: Compile-time errors (IOException, SQLException)
+- **Unchecked Exceptions**: Runtime errors (NullPointerException, ArithmeticException)
+- **Exception Handling Mechanisms**:
+  - `try-catch`
+  - `finally`
+  - `throw`
+  - `throws`
+  - Custom Exceptions
 
