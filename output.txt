@@ -1,0 +1,4 @@
+
+ Java is an object oriented program
+Java is robust and distributed
+Java is mutithreaded and have automatic garbage collection
