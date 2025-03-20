@@ -1,4 +1,4 @@
-# **Java Learning Roadmap**
+# **JAVA**
 
 ## **1️⃣ Variables in Java**
 - Variables are containers for storing data values.
